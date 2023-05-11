@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <ul class="header-list nav nav-pills">
+                <li class="header-list-item nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab1" class="nav-link active buttons">Home</button>
+                </li>
+                <li class="header-list-item nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab2" class="nav-link buttons">Evento</button>
+                </li>
+                <li class="header-list-item nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab3" class="nav-link buttons">Convite</button>
+                </li>
+            </ul>
+        </header>
+        <div class="tab-content">
+            <div class="tab-pane active " id="tab1">
+                <div class="home">
+                    <div class="home__areaImg">
+                        <div class="home__areaImg__content">
+                            <h1 class="home__areaImg__content__happy">HAPPY</h1>
+                            <h1 class="home__areaImg__content__birthday">birthday</h1>
+                            <div class="home__areaImg__content__time">
+                                <div>
+                                    <p id="day">00</p>
+                                    <span>Dias</span>
+                                </div>
+                                <div>
+                                    <p id="hours">00</p>
+                                    <span>Horas</span>
+                                </div>
+                                <div>
+                                    <p id="minutes">00</p>
+                                    <span>Minutos</span>
+                                </div>
+                                <div>
+                                    <p id="seconds">00</p>
+                                    <span>Segundos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home__areaInfo">
+                        <div>
+                            <h1 class="home__areaInfo__title">Celebração</h1>
+                            <p class="home__areaInfo__text">Mais um ano de vida merece ser celebrado.</p>
+                            <span>Vamos comemorar o meu aniversário. Espero muito por você!</span>
+                            <div class="home__areaInfo__button">
+                                <p>18/05/2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab2">
+                <div class="event">
+                    <div class="event__areaImg">
+                        <h1 class="event__areaImg__title">Local do Evento</h1>
+                        <div class="event__areaImg__content">
+                            <ul class="event__areaImg__content__list">
+                                <li class="event__areaImg__content__list__item">
+                                    <img src="../dist/img/local/bar.jpg" alt="">
+                                </li>
+                                <li class="event__areaImg__content__list__item">
+                                    <img src="../dist/img/local/campo.jpg" alt="">
+                                </li>
+                                <li class="event__areaImg__content__list__item">
+                                    <img src="../dist/img/local/lago.jpg" alt="">
+                                </li>
+                                <li class="event__areaImg__content__list__item">
+                                    <img src="../dist/img/local/salao.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="event__areaImg__ende">
+                            Endereço: R. João Batista de Morais, 1333 - Rio Piracicaba, Ibirité - MG
+                        </p>
+                    </div>
+                    <div class="event__areaInfo">
+                        <div class="event__areaInfo_content">
+                            <h1 class="event__areaInfo__title">Sitio Zezé Lilia</h1>
+                            <p class="event__areaInfo__text">Vem se divertir e celebrar com a gente.</p>
+                            <span>Esteja preparado para os momentos mais inesquecíveis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <div class="invite">
+                    <div class="invite_areaImg">
+                        <h1>Aniversariante</h1>
+                        <div class="invite_areaImg__img">
+                            <img src="../dist/img/anive.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="invite__areaInfo">
+                        <h1 class="invite__areaInfo__title">Angelo Pedrosa</h1>
+                        <h2 class="invite__areaInfo__subtitle">23 ANOS</h2>
+                        <div class="invite__areaInfo__inline"></div>
+                        <h1 class="invite__areaInfo__title">18/MAIO/2023</h1>
+                        <h2 class="invite__areaInfo__subtitle">ÁS 22:00</h2>
+                        <div class="invite__areaInfo__inline"></div>
+                        <h1 class="invite__areaInfo__title">Sitio Zezé Lilia</h1>
+                        <h2 class="invite__areaInfo__subtitle">
+                            R. João Batista de Morais, 1333 - Rio Piracicaba, Ibirité - MG
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../dist/lib/bootstrap.bundle.min.js"></script>
+<script src="./src/scripts/main.js"></script>
+
+</html>

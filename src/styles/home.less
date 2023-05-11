@@ -1,0 +1,127 @@
+@import "./reset.less";
+
+.home {
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5rem 0px;
+
+    @media (max-width: 900px) {
+        display: block;
+    }
+}
+
+.home__areaImg {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+
+
+    &__content {
+        text-align: center;
+        padding: 1rem 0px;
+        border: 2px solid #F2BD1D;
+        box-shadow: 4px 4px 8px 2px #bdbdbd;
+
+        &__happy {
+            font-family: @fontSubTitle;
+            color: #F2BF5E;
+        }
+
+        &__birthday {
+            color: black;
+            font-family: @fontTitle;
+        }
+
+
+        img {
+            margin: 0px;
+            max-width: 50%;
+            height: auto;
+        }
+
+        &__time {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: .5rem;
+
+            div {
+                margin: 0px .5rem;
+                text-align: center;
+
+                p {
+                    margin: 0;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-shadow: 4px 4px 8px #BF7E04;
+                }
+
+                span {
+                    margin: .2rem 0px;
+                    text-shadow: 4px 4px 8px #BF7E04;
+                }
+            }
+        }
+    }
+}
+
+.home__areaInfo {
+    width: 50%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        margin: 0;
+        color: #F2BD1D;
+        text-shadow: 2px 2px 4px #bdbdbd;
+    }
+
+    &__text {
+        margin: 0;
+        font-family: @fontSubTitle;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        line-height: 2rem;
+    }
+
+    span {
+        font-size: 1.1rem;
+    }
+
+    &__button {
+        display: inline-block;
+        width: 100px;
+        padding: 4px 10px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #F2BD1D;
+        border: 2px solid #F2BD1D;
+        box-shadow: 4px 4px 8px 2px #bdbdbd;
+        @media (max-width: 900px) {
+            display: inline-block;  
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            font-family: @fontSubTitle;
+            font-weight: bold;
+        }
+
+        span {
+            font-size: 1.1rem;
+        }
+    }
+}
